@@ -1,0 +1,6 @@
+framework module Pods_YGElfControl_Tests {
+  umbrella header "Pods-YGElfControl_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - YGElfControl (0.1.0)
+
+DEPENDENCIES:
+  - YGElfControl (from `../`)
+
+EXTERNAL SOURCES:
+  YGElfControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YGElfControl: cd33a64118457536b08952396b3f404730f8f324
+
+PODFILE CHECKSUM: 7f9806e4ed0d8b10fc7a80a919319cd38b7d636a
+
+COCOAPODS: 1.5.3

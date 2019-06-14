@@ -1,0 +1,6 @@
+framework module Pods_YGElfControl_Example {
+  umbrella header "Pods-YGElfControl_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
