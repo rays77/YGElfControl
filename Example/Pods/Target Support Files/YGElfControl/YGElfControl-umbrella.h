@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "YGBanner.h"
 #import "YGTextView.h"
 
 FOUNDATION_EXPORT double YGElfControlVersionNumber;

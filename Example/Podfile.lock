@@ -1,16 +1,25 @@
 PODS:
-  - YGElfControl (0.1.0)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - YGElfControl (0.1.0):
+    - SDWebImage (~> 5.0)
 
 DEPENDENCIES:
   - YGElfControl (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SDWebImage
 
 EXTERNAL SOURCES:
   YGElfControl:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YGElfControl: cd33a64118457536b08952396b3f404730f8f324
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  YGElfControl: 81b3defa64afd08bb352b88e935df73f7a6a494c
 
-PODFILE CHECKSUM: 7f9806e4ed0d8b10fc7a80a919319cd38b7d636a
+PODFILE CHECKSUM: 2aba70e524ebf4f95cade4118a39c08ff18b874e
 
 COCOAPODS: 1.5.3

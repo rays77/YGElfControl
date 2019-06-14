@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "243C5C35F44ABD5E23F0FA637A3D8C29"
+               BlueprintIdentifier = "CEDD087ABD0438686D571F67CEE895FB"
                BuildableName = "YGElfControl.framework"
                BlueprintName = "YGElfControl"
                ReferencedContainer = "container:Pods.xcodeproj">

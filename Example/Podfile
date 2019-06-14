@@ -3,11 +3,17 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'YGElfControl_Example' do
+    
   pod 'YGElfControl', :path => '../'
+#    pod 'YGElfControl', '~>0.1.0'
+
+
+
+
+
 
   target 'YGElfControl_Tests' do
     inherit! :search_paths
-
     
   end
 end

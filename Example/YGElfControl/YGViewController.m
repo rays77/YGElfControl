@@ -8,6 +8,7 @@
 
 #import "YGViewController.h"
 #import "YGTextView.h"
+#import "YGBanner.h"
 
 @interface YGViewController ()
 
@@ -19,6 +20,10 @@
 {
     [super viewDidLoad];
 	
+    [self addYGTextView];
+}
+
+- (void)addYGTextView {
     YGTextView *textView = [[YGTextView alloc] init];
     textView.layer.cornerRadius = 4;
     textView.layer.borderColor = [UIColor redColor].CGColor;
