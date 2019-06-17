@@ -8,8 +8,6 @@
 
 #import "YGRequest.h"
 #import "NSObject+Helper.h"
-#import "YGAFManager.h"
-#import "YGCommonUse.h"
 
 @interface YGRequest ()
 @end

@@ -6,7 +6,7 @@
 //  Copyright © 2018年 YG. All rights reserved.
 //
 
-#import "SVProgressHUD.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 @interface SVProgressHUD (HUD)
 
 /**

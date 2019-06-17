@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YGAFManager.h"
+#import "YGCommonUse.h"
 
 /**
  请求方式
