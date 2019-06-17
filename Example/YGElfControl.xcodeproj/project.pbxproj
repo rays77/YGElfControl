@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F9109FBA29CCA642021168A /* YGElfControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YGElfControl.podspec; path = ../YGElfControl.podspec; sourceTree = "<group>"; };
+		1F9109FBA29CCA642021168A /* YGElfControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YGElfControl.podspec; path = ../YGElfControl.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		23DF88BB8998501B5C18EBCF /* Pods_YGElfControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YGElfControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BB744E4A2FFB05E7519843 /* Pods_YGElfControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YGElfControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FA7975EAB095D6383D744A /* Pods-YGElfControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YGElfControl_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YGElfControl_Tests/Pods-YGElfControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1AD8481858F1BB2F554410 /* Pods-YGElfControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YGElfControl_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YGElfControl_Example/Pods-YGElfControl_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9F9E6F83BD6B2A665355CF2A /* Pods-YGElfControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YGElfControl_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YGElfControl_Example/Pods-YGElfControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AC88C5C3039A8911677E3C1D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C43D73799DEF73EAEC13C165 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AC88C5C3039A8911677E3C1D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C43D73799DEF73EAEC13C165 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,14 +325,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YGElfControl_Example/Pods-YGElfControl_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/YGElfControl/YGElfControl.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YGElfControl.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,24 +1,46 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - SDWebImage (5.0.6):
     - SDWebImage/Core (= 5.0.6)
   - SDWebImage/Core (5.0.6)
-  - YGElfControl (0.1.0):
+  - SVProgressHUD (2.2.5)
+  - YGElfControl (0.1.2):
+    - AFNetworking (~> 3.0)
     - SDWebImage (~> 5.0)
+    - SVProgressHUD
 
 DEPENDENCIES:
   - YGElfControl (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - SDWebImage
+    - SVProgressHUD
 
 EXTERNAL SOURCES:
   YGElfControl:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
-  YGElfControl: 81b3defa64afd08bb352b88e935df73f7a6a494c
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  YGElfControl: fe81e184a730366b96e51ca76d67e93f9ea0ee7c
 
 PODFILE CHECKSUM: 2aba70e524ebf4f95cade4118a39c08ff18b874e
 

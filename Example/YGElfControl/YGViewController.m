@@ -7,8 +7,7 @@
 //
 
 #import "YGViewController.h"
-#import "YGTextView.h"
-#import "YGBanner.h"
+#import "YGElfHeader.h"
 
 @interface YGViewController ()
 
@@ -19,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+
     [self addYGTextView];
 }
 
