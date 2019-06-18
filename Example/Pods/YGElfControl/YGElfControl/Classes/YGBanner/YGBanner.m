@@ -7,6 +7,7 @@
 //
 
 #import "YGBanner.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @implementation YGBannerModel
 

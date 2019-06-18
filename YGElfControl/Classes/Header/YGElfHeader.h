@@ -9,6 +9,7 @@
 #ifndef YGElfHeader_h
 #define YGElfHeader_h
 
+#import "YGNoDataView.h"
 #import "YGTextView.h"
 #import "YGBanner.h"
 

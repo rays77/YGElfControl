@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YGElfControl'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = '定制一些常用的控件.'
 
 # This description is used to generate tags and improve search results.
@@ -43,4 +43,5 @@ Pod::Spec.new do |s|
   s.dependency 'SDWebImage', '~> 5.0'
   s.dependency 'AFNetworking', '~> 3.0'
   s.dependency 'SVProgressHUD'
+  s.dependency 'Masonry'
 end

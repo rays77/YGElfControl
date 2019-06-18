@@ -37,6 +37,7 @@
 #import "YGProduceQRCode.h"
 #import "YGElfHeader.h"
 #import "YGBanner.h"
+#import "YGNoDataView.h"
 #import "YGTextView.h"
 
 FOUNDATION_EXPORT double YGElfControlVersionNumber;
