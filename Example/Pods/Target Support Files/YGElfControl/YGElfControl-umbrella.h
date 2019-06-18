@@ -20,7 +20,7 @@
 #import "NSObject+Helper.h"
 #import "NSObject+YGKVO.h"
 #import "NSString+Helper.h"
-#import "ProgressHUD.h"
+#import "SVProgressHUD+HUD.h"
 #import "UIButton+IntervalTime.h"
 #import "UIColor+Category.h"
 #import "UIFont+Fit.h"

@@ -8,7 +8,6 @@
 
 #import "YGRequest.h"
 #import "NSObject+Helper.h"
-#import <AFNetworking/AFNetworking.h>
 
 @interface YGRequest ()
 @end
@@ -70,7 +69,7 @@
     }
     if (method == GET)
     {
-        [((AFHTTPSessionManager *)kAFHTTPSessionManager) GET:urlStr parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        [kAFHTTPSessionManager GET:urlStr parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
@@ -87,7 +86,7 @@
     }
     else if (method == POST)
     {
-        [((AFHTTPSessionManager *)kAFHTTPSessionManager) POST:urlStr parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+        [kAFHTTPSessionManager POST:urlStr parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
@@ -106,7 +105,7 @@
 
 + (void)GET:(NSString *)url params:(NSDictionary *)params success:(YGRequestSuccess)success failure:(YGRequestFailure)failure {
     
-    [((AFHTTPSessionManager *)kAFHTTPSessionManager) GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+    [kAFHTTPSessionManager GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [YGRequest jsonAnalysisSuccess:success failure:failure task:task responseObject:responseObject];
@@ -116,7 +115,7 @@
 }
 
 + (void)POST:(NSString *)url params:(NSDictionary *)params success:(YGRequestSuccess)success failure:(YGRequestFailure)failure {
-    [((AFHTTPSessionManager *)kAFHTTPSessionManager) POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+    [kAFHTTPSessionManager POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [YGRequest jsonAnalysisSuccess:success failure:failure task:task responseObject:responseObject];

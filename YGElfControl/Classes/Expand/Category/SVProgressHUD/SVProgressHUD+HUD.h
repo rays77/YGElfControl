@@ -1,12 +1,13 @@
 //
-//  ProgressHUD.h
+//  SVProgressHUD+HUD.h
 //  YGElfControl
 //
 //  Created by wuyiguang on 2018/2/7.
 //  Copyright © 2018年 YG. All rights reserved.
 //
 
-@interface ProgressHUD : NSObject
+#import <SVProgressHUD/SVProgressHUD.h>
+@interface SVProgressHUD (HUD)
 
 /**
  带旋转进度提示，加载时底部子控件不能被点击

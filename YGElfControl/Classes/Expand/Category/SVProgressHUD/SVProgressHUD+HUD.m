@@ -1,15 +1,14 @@
 //
-//  ProgressHUD.m
+//  SVProgressHUD+HUD.m
 //  YGElfControl
 //
 //  Created by wuyiguang on 2018/2/7.
 //  Copyright © 2018年 YG. All rights reserved.
 //
 
-#import "ProgressHUD.h"
-#import <SVProgressHUD/SVProgressHUD.h>
+#import "SVProgressHUD+HUD.h"
 
-@implementation ProgressHUD
+@implementation SVProgressHUD (HUD)
 
 + (void)showMaskBlack
 {

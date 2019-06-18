@@ -19,6 +19,9 @@
     "ios": "8.0"
   },
   "source_files": "YGElfControl/Classes/**/*",
+  "user_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  },
   "dependencies": {
     "SDWebImage": [
       "~> 5.0"

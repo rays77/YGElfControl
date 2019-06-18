@@ -7,7 +7,6 @@
 //
 
 #import "YGAFManager.h"
-#import <AFNetworking/AFNetworking.h>
 
 @interface YGAFManager ()
 
@@ -31,19 +30,18 @@
 - (instancetype)init {
     if (self = [super init]) {
         self.openLog = YES;
-        AFHTTPSessionManager *mng = [AFHTTPSessionManager manager];
-        mng.requestSerializer.timeoutInterval = kFManagerTimeoutInterval;
-        mng.requestSerializer = [AFJSONRequestSerializer serializer];
-        mng.responseSerializer.acceptableContentTypes = [YGAFManager acceptableContentTypes];
-        mng.requestSerializer.timeoutInterval = kFManagerTimeoutInterval;
-        self.manager = mng;
+        self.manager = [AFHTTPSessionManager manager];
+        self.manager.requestSerializer.timeoutInterval = kFManagerTimeoutInterval;
+        self.manager.requestSerializer = [AFJSONRequestSerializer serializer];
+        self.manager.responseSerializer.acceptableContentTypes = [YGAFManager acceptableContentTypes];
+        self.manager.requestSerializer.timeoutInterval = kFManagerTimeoutInterval;
     }
     return self;
 }
 
 - (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
     _timeoutInterval = timeoutInterval;
-    ((AFHTTPSessionManager *)self.manager).requestSerializer.timeoutInterval = timeoutInterval;
+    self.manager.requestSerializer.timeoutInterval = timeoutInterval;
 }
 
 - (NSDictionary *)baseParams {
