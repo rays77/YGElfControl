@@ -9,6 +9,7 @@
 #ifndef YGElfHeader_h
 #define YGElfHeader_h
 
+#import "ProgressHUD.h"
 #import "YGTextView.h"
 #import "YGBanner.h"
 
@@ -22,7 +23,6 @@
 #import "UIView+YGCornerRadius.h"
 #import "UIButton+IntervalTime.h"
 #import "UIImageView+WebCache.h"
-#import "SVProgressHUD+HUD.h"
 #import "UIColor+Category.h"
 #import "NSObject+Helper.h"
 #import "NSString+Helper.h"

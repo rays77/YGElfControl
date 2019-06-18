@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AFNetworking/AFNetworking.h>
 
 #define kFManagerTimeoutInterval     60.0
 
@@ -16,7 +15,10 @@
 
 @interface YGAFManager : NSObject
 
-@property (nonatomic, strong) AFHTTPSessionManager *manager;
+/**
+ AFHTTPSessionManager
+ */
+@property (nonatomic, strong) id manager;
 
 @property (nonatomic, assign) NSTimeInterval timeoutInterval;
 /**
